@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Rubik", "sans-serif";
+  user-select: none;
+  &__icon {
+    color: #415a77;
+    font-size: 40px;
+    font-weight: bold;
+    &:hover {
+      color: #778da9;
+      cursor: pointer;
+    }
+  }
+}

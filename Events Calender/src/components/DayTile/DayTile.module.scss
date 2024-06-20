@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.tile {
+  border-top: 2px solid black;
+
+  width: calc(100% / 7);
+  height: calc(100vh / 7);
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Roboto Mono", "sans-serif";
+  user-select: none;
+  flex-direction: column;
+
+  &__currentDay {
+    background-color: lightgray;
+  }
+  &:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+}
+.dateText {
+  align-self: flex-end;
+  margin-bottom: 5px;
+}
+.events {
+  width: 95%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.events::-webkit-scrollbar {
+  display: none;
+}

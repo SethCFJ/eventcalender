@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.days {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  border-top: 3px solid black;
+  font-family: "Raleway", "sans-serif";
+  user-select: none;
+  &__text {
+    width: calc(100% / 7);
+    text-align: center;
+  }
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: flex-start;
+  width: 100%;
+}
