@@ -30,8 +30,8 @@ const CalenderGrid: React.FC<CalenderGridProps> = ({ date }) => {
   const firstDay = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-  const startDay = firstDay.getDay();
-
+  let startDay = firstDay.getDay();
+  startDay = (startDay + 5) % 7;
   const days: string[] = [];
 
   // Add empty tiles for the days before the first day of the month

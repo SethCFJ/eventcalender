@@ -45,7 +45,7 @@ const DayModal: React.FC<DayModalProps> = ({
           <FontAwesomeIcon icon={faX} />
         </button>
       </div>
-      {date && <h2>{`${new Date(date).toDateString()}`}</h2>}
+      {/* {date && <h2>{`${new Date(date).toDateString()}`}</h2>} */}
       <AddEventForm onSubmit={handleSubmit} currentDate={date ?? ""} />
     </dialog>
   );

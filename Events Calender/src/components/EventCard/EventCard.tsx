@@ -28,6 +28,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, onClick }) => {
     >
       <h2 className={styles.card__text}>{event.name}</h2>
       <p className={styles.card__text}>{event.label}</p>
+      <p className={styles.card__text}>{event.location}</p>
     </div>
   );
 };
