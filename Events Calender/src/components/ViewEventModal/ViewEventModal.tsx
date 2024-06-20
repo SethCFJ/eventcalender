@@ -19,7 +19,7 @@ const countdown = (endDate: string): number => {
   const end = new Date(endDate);
   const today = new Date();
 
-  // Set time to 00:00:00 to avoid issues with partial days
+  // Set all hours to zero so that it shows actual distance in days no matter the time.
   end.setHours(0, 0, 0, 0);
   today.setHours(0, 0, 0, 0);
 
@@ -48,13 +48,14 @@ const ViewEventModal: React.FC<ViewEventModalProps> = ({
     }
   }, [openModal]);
 
+  // make patch call with event data
   const handleUpdate = async (data: EventItemResponse) => {
     await updateEventItem(event.id, data);
     refreshEvents();
     setIsEditing(false);
     closeModal();
   };
-
+  // delete event from id
   const handleDelete = async () => {
     await deleteEventItem(event.id);
     refreshEvents();
@@ -75,6 +76,7 @@ const ViewEventModal: React.FC<ViewEventModalProps> = ({
           <FontAwesomeIcon icon={faX} />
         </button>
       </div>
+      {/* dynamically render update event form or event details dependant on the isEditing state */}
       {isEditing ? (
         <UpdateEventForm
           event={event}

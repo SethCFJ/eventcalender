@@ -23,7 +23,7 @@ const CalenderGrid: React.FC<CalenderGridProps> = ({ date }) => {
   const [selectedEvent, setSelectedEvent] = useState<EventItemResponse | null>(
     null
   );
-
+  // Get all date values needed for logic
   const today = new Date().toISOString().split("T")[0];
   const year = date.getFullYear();
   const month = date.getMonth();
@@ -43,7 +43,7 @@ const CalenderGrid: React.FC<CalenderGridProps> = ({ date }) => {
   for (let i = 1; i <= daysInMonth; i++) {
     days.push(new Date(year, month, i).toISOString().split("T")[0]);
   }
-
+  // Modal states
   const openDayModal = (date: string) => {
     setSelectedDate(date);
     setModal(true);
@@ -71,7 +71,7 @@ const CalenderGrid: React.FC<CalenderGridProps> = ({ date }) => {
       console.error("Error fetching events:", error);
     }
   };
-
+  // Refresh calender when modal states change
   useEffect(() => {
     refreshEvents();
   }, [modal, viewEventModal]);

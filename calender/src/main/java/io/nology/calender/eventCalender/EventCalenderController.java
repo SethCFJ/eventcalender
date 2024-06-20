@@ -73,12 +73,12 @@ public class EventCalenderController {
     @GetMapping("/events/label/{label}")
     public ResponseEntity<List<EventItem>> getEventsByLabel(@PathVariable String label) {
         List<EventItem> events = eventCalenderService.getEventsByLabel(label);
-        return ResponseEntity.ok(events);
+        return new ResponseEntity<>(events, HttpStatus.OK);
     }
 
     @GetMapping("/events/location/{location}")
     public ResponseEntity<List<EventItem>> getEventsByLocation(@PathVariable String location) {
         List<EventItem> events = eventCalenderService.getEventsByLocation(location);
-        return ResponseEntity.ok(events);
+        return new ResponseEntity<>(events, HttpStatus.OK);
     }
   }

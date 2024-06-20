@@ -37,7 +37,6 @@ const DayModal: React.FC<DayModalProps> = ({
         <button
           className={styles.button}
           onClick={() => {
-            // openModal = false;
             console.log("close button pressed");
             console.log(openModal);
             setModal(false);

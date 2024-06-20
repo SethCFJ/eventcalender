@@ -7,11 +7,11 @@ import jakarta.validation.constraints.Pattern;
 
 public class UpdateEventCalenderDTO {
 
-  @Pattern(regexp = ".*\\S.*", message = "Title cannot be empty")
+  @Pattern(regexp = ".*\\S.*", message = "Name cannot be empty")
   private String name;
-  @Pattern(regexp = ".*\\S.*", message = "Title cannot be empty")
+  @Pattern(regexp = ".*\\S.*", message = "Location cannot be empty")
   private String location;
-  @Pattern(regexp = ".*\\S.*", message = "Title cannot be empty")
+  @Pattern(regexp = ".*\\S.*", message = "Label cannot be empty")
   private String label;
   
   private LocalDateTime startDate;
