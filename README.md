@@ -25,7 +25,7 @@ The purpose of this project is to allow users to add events to a calender that a
 ## Build Steps
 
 - Run "npm run build && npm run dev" from within the ./Events Calender/ folder
-- Run the "todolist\src\main\java\com\todolist\TodolistApplication.java" file within terminal to initiate backend
+- Run the "calender\src\main\java\io\nology\CalenderApplication.java" file within terminal to initiate backend
 
 ---
 
