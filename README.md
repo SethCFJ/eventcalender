@@ -1,6 +1,8 @@
 # Event Calender App
 
 ## Demo & Snippets
+<img width="1923" alt="eventcalender" src="https://github.com/SethCFJ/eventcalender/assets/160681650/a11e5c8d-177f-4240-9ecf-06c42105afd4">
+
 
 ## Requirements / Purpose
 
