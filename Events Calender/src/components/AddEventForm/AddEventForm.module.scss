@@ -30,6 +30,9 @@
     background-color: black;
     color: rgb(37, 179, 37);
     border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__fields {
     background-color: rgb(197, 193, 193);
